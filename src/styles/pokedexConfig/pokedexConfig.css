@@ -1,0 +1,147 @@
+/*=========CONTAINER POKEDEX INFO==========*/
+.general-container {
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    background-color: #F5EFE6;
+    background-size: cover;
+    align-items: center;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+/*========= CONFIG CONTAINER==========*/
+.config-container {
+    width: 1400px;
+    height: 700px;
+    border: 1px solid rgb(94, 48, 5);
+    background-color: rgba(149, 122, 100, 0.333);
+    backdrop-filter: blur(10px);
+    border-radius: 17px;
+    display: flex;
+    justify-content: space-between;
+    gap: 10px;
+}
+
+.config-image-pokedex {
+    width: 500px;
+    height: 700px;
+   
+}
+.image-config{
+    width: 600px;
+    height: 600px;
+    position: relative;
+    left: 40px;
+    top:50px;
+}
+.configuration {
+    width: 800px;
+    height: 700px;
+    display: flex;
+    flex-direction: column;
+}
+
+/*=========  GRETTING CONTAINER==========*/
+.gretting-container {
+    width: 800px;
+    height: 150px;
+    margin-top: 60px;
+   
+}
+
+.gretting-container h1 {
+    font-size: 40px;
+    text-align: center;
+}
+
+.gretting-container span {
+    font-size: 40px;
+    color: #815B5B;
+}
+
+.gretting-container  p {
+    font-size: 25px;
+    text-align: center;
+    font-weight: bolder;
+}
+
+/*=========  INPUT CHECK BOX CONTAINER==========*/
+.config-form-container {
+    width: 800px;
+    height: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 60px;
+    color: #815B5B;
+    font-size: 25px;
+    font-weight: bolder;
+   
+
+}
+label:hover{
+    color: #594545;
+}
+
+.config-form-container input {
+    width: 35px;
+    height: 35px;
+    cursor: pointer;
+    position: relative;
+    top: 6px;
+}
+
+/*=========  BUTTONS CONTAINER==========*/
+.container-buttons {
+    width: 800px;
+    height: 200px;
+    position: relative;
+    
+}
+.container-buttons p{
+    color: #000000;
+    font-size: 33px;
+    text-align: center;
+}
+.config-button-save{
+    width: 170px;
+    height: 47px;
+    background-color: #594545;
+    color: white;
+    font-size: 20px;
+    font-weight: bolder;
+    border-radius: 7px;
+    border-style: none;
+    cursor: pointer;
+    padding-top: 5px;
+    position: absolute;
+    right: 400px;
+    top:483px;
+    font-family: 'Times New Roman', Times, serif;
+    
+}
+.config-button-cancel{
+    width: 170px;
+    height: 47px;
+    background-color: #594545;
+    color: white;
+    font-size: 20px;
+    font-weight: bolder;
+    border-radius: 7px;
+    border-style: none;
+    cursor: pointer;
+    padding-top: 5px;
+    position: absolute;
+    left: 430px;
+    bottom:-20px;
+    font-family: 'Times New Roman', Times, serif;
+}
+.config-button-save:hover{
+    filter: brightness(1.4);
+   
+}
+.config-button-cancel:hover{
+    filter: brightness(1.4);
+ 
+}

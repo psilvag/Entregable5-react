@@ -1,0 +1,15 @@
+.container-page-404{
+    width: 100%;
+    min-height: 100vh;
+    background-color: #F5EFE6;
+    font-family: 'Times New Roman', Times, serif;
+    display: flex;
+    gap:20px;
+    justify-content: center;
+    align-items: center;
+    
+}
+.container-page h1{
+ color: rgb(220, 210, 210);
+ font-size: 45px;
+}

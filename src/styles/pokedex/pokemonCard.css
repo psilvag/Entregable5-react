@@ -1,0 +1,351 @@
+ul {
+  list-style: none;
+}
+
+/*======POKEMON ARTICLE SIZE=======*/
+.pokemon-container-article {
+  width: 340px;
+  height: 500px;
+  border: 6px solid rgb(0, 0, 0);
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  font-family: 'Times New Roman', Times, serif;
+
+}
+
+.pokemon-container-article:hover {
+  cursor: pointer;
+  transform: scale(1.04);
+  filter: brightness(1.1);
+}
+
+.pokemon-container-header {
+  width: 200px;
+  height: 180px;
+}
+
+.pokemon-img-header {
+  width: 260px;
+  height: 280px;
+  position: absolute;
+  left: 53px;
+  top: 6px;
+}
+
+/*======POKEMONS INFO MAIN CONTAINER=======*/
+.card-info {
+  width: 340px;
+  height: 340px;
+  background-color: rgb(255, 255, 255);
+
+}
+
+/*======POKEMONS NAME AND TYPES=======*/
+.pokemon-section-info {
+  display: flex;
+  width: 100%;
+  height: 100px;
+  flex-direction: column;
+  position: absolute;
+  top: 250px;
+  align-items: center;
+}
+
+.pokemon-section-info h1 {
+  font-size: 25px;
+}
+
+.pokemos-types {
+  display: flex;
+  gap: 10px;
+  position: absolute;
+  top: 45px;
+  left: 19%;
+  color: black;
+  font-size: 20px;
+
+}
+
+/*======POKEMONS STATS=======*/
+.pokemons-stats {
+  width: 250px;
+  height: 130px;
+  position: absolute;
+  top: 340px;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 15px;
+
+}
+
+.pokemons-stats li {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+}
+
+.pokemons-stats li:nth-child(1) {
+  position: relative;
+  left: 10px;
+}
+
+.pokemons-stats li:nth-child(2) {
+  position: relative;
+  left: 75px;
+}
+
+.pokemons-stats li:nth-child(3) {
+  position: relative;
+  left: 120px;
+}
+
+.pokemons-stats li:nth-child(4) {
+  position: relative;
+  top: 25px;
+  left: -28px;
+}
+
+.pokemons-stats li:nth-child(5) {
+  position: relative;
+  top: 25px;
+  left: -32px;
+}
+
+.pokemons-stats li:nth-child(6) {
+  position: relative;
+  top: -30px;
+  right: -225px;
+}
+
+.span-description {
+  color: rgb(155, 148, 148);
+  text-transform: uppercase;
+  font-size: 12px;
+}
+
+.span-valor {
+
+  font-size: 20px;
+  font-weight: bold;
+  text-align: center;
+}
+
+                        /*POKEMONS CARDS STYLE BY TYPE CARD*/
+
+
+/*TYPE grass*/
+.bg-grass {
+  background: linear-gradient(to right, #B4E197, #B4E197, #6ba15e);
+}
+.border-grass {
+  border: 6px solid rgb(37, 135, 37);
+}
+.letter-grass {
+  color: #27504b;
+}
+
+/*TYPE fighting*/
+.bg-fighting {
+  background: linear-gradient(to right, rgb(190, 95, 103), rgb(158, 62, 70), rgb(152, 28, 38));
+}
+.border-fighting {
+  border: 6px solid rgb(162, 36, 46);
+}
+.letter-fighting {
+  color: rgb(162, 36, 46);
+}
+
+
+/*TYPE normal*/
+.bg-normal {
+  background: rgb(220, 215, 215);
+}
+.border-normal {
+  border: 6px solid rgb(64, 63, 63);
+}
+.letter-normal {
+  color: #1d1d1d;
+}
+
+
+/*TYPE flying*/
+.bg-flying {
+  background: linear-gradient(to right, #607EAA, #1C3879,#607EAA);
+}
+.border-flying {
+  border: 6px solid #1C3879;
+}
+.letter-flying {
+  color: #607EAA;
+}
+
+
+/*TYPE poison*/
+.bg-poison {
+  background: linear-gradient(to right, #BFACE0, #A084CA, #645CAA, #A084CA);
+}
+.border-poison {
+  border: 6px solid #524c8e;
+}
+.letter-poison {
+  color: #645CAA;
+}
+
+
+/*TYPE ground*/
+.bg-ground {
+  background: linear-gradient(to right, #704F4F, #553939, #472D2D,#704F4F);
+}
+.border-ground {
+  border: 6px solid rgb(128, 75, 0);
+}
+.letter-ground {
+  color: rgb(128, 75, 0);
+}
+
+
+/*TYPE rock*/
+.bg-rock {
+  background: linear-gradient(to right, #515254, #262a2d,#1c1e20,#36393c);
+}
+.border-rock {
+  border: 6px solid #1c1e20;
+}
+.letter-rock {
+  color: #1c1e20;
+}
+
+
+/*TYPE bug*/
+.bg-bug {
+  background: linear-gradient(to right, #CA4E79, #7A4069, #6a476a);
+}
+.border-bug {
+  border: 6px solid #6a476a;
+}
+.letter-bug {
+  color: #CA4E79;
+}
+
+
+/*TYPE ghost*/
+.bg-ghost {
+  background: linear-gradient(to right, #35C2E6, #0FA3FF, #0FA3FF,#35C2E6,#0FA3FF);
+}
+.border-ghost {
+  border: 6px solid #116497;
+}
+.letter-ghost {
+  color: #116497;
+}
+
+
+/*TYPE steel*/
+.bg-steel {
+  background: linear-gradient(178deg, #A5C9CA,#2C3333, #395B64);
+}
+.border-steel {
+  border: 6px solid #2C3333;
+}
+.letter-steel {
+  color: #2C3333;
+}
+
+
+/*TYPE fire*/
+.bg-fire {
+  background: linear-gradient(to right, #FF5F00, #B20600, #FF6D28);
+}
+.border-fire {
+  border: 6px solid #FF5F00;
+}
+.letter-fire {
+  color: #FF5F00;
+}
+
+
+/*TYPE water*/
+.bg-water {
+  background: linear-gradient(to right, #79DAE8,#0AA1DD,#2155CD);
+}
+.border-water {
+  border: 6px solid #1f4498;
+}
+.letter-water {
+  color: #1f4498;
+}
+
+
+/*TYPE electric*/
+.bg-electric {
+  background: linear-gradient(to right, #FFEF82, #EFD345, #f8dc3c);
+}
+.border-electric {
+  border: 6px solid #bb8a03;
+}
+.letter-electric {
+  color: #bb8a03;
+}
+
+
+/*TYPE psychich*/
+.bg-psychic {
+  background: linear-gradient(to right, #F0E9D2, #bbb193,#bcb392);
+}
+.border-psychic {
+  border: 6px solid #918248;
+}
+.letter-psychic {
+  color: #918556;
+}
+
+
+/*TYPE ice*/
+.bg-ice {
+  background: linear-gradient(to right, #B3E8E5, #82DBD8, #3BACB6,#2F8F9D);
+}
+.border-ice {
+  border: 6px solid #82DBD8;
+}
+.letter-ice {
+  color: #2F8F9D;
+}
+
+
+/*TYPE dragon*/
+.bg-dragon {
+  background: linear-gradient(to right, #a6237c, #570A57, #2E0249);
+}
+.border-dragon {
+  border: 6px solid #570A57;
+}
+.letter-dragon {
+  color: #570A57;
+}
+
+/*TYPE dark*/
+.bg-dark {
+ background: linear-gradient(to right, #30475E, #30475E,#1f2a36);
+}
+.border-dark {
+ border: 6px solid #1f2a36;
+}
+.letter-dark {
+  color: #1f2a36;
+}
+
+
+/*TYPE fairy*/
+.bg-fairy {
+  background: linear-gradient(to right, #BEDCFA, #6d80c9);
+}
+.border-fairy {
+  border: 6px solid #6d80c9;
+}
+.letter-fairy {
+  color: #6d80c9;
+}

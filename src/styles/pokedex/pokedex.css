@@ -1,0 +1,243 @@
+.pokedex-general-container {
+    display: flex;
+    flex-direction: column;
+    background-color: #F5EFE6;
+    align-items: center;
+    gap: 20px;
+}
+
+.pokedex-image-header {
+    width: 100%;
+    height: 360px;
+    display: flex;
+    justify-content: center;
+}
+
+.image-header {
+    width: 100%;
+    height: 380px;
+    border-radius: 5px;
+
+}
+
+/*======POKEMONS MAIN CONTAINER=======*/
+.pokedex-main-container {
+    width: 1500px;
+    display: flex;
+    flex-direction: column;
+}
+
+/*======POKEMONS WELCOME TEXT=======*/
+.pokedex-header {
+    display: flex;
+    height: 100px;
+    position: relative;
+    margin-top: 40px;
+}
+
+.pokedex-header h1 {
+    font-family: 'Times New Roman', Times, serif;
+    color: #222D4E;
+    font-size: 35px;
+}
+
+/*==========POKEDEX BUTTONS NAVIGATE*/
+.pokedex-button-navigate {
+    width: 300px;
+    display: flex;
+    position: absolute;
+    right: 130px;
+    gap: 80px;
+    justify-content: center;
+}
+
+.button-container p {
+    position: absolute;
+    top: 60px;
+    color: rgb(0, 0, 0);
+    font-weight: bolder;
+}
+
+.home-button,
+.config-button {
+    width: 73px;
+    height: 70px;
+}
+.home-button:hover {
+    transform: scale(1.2);
+}
+.config-button:hover {
+    transform: scale(1.2);
+}
+
+/*==========POKEDEX INPUTS CONTAINER*/
+/*==========POKEDEX INPUT*/
+.pokedex-input-selected {
+    width: 1500px;
+    height: 60px;
+    display: flex;
+    justify-content: space-between;
+    margin-top: 25px;
+}
+.pokedex-input {
+    width: 600px;
+    height: 60px;
+    position: relative;
+    left:20px;
+}
+.input-search-pokedex {
+    width: 480px;
+    height: 50px;
+    padding: 2px 8px;
+    border-style: none;
+    border-radius: 5px 0 0 5px;
+    font-size: 22px;
+    font-family: 'Times New Roman', Times, serif;
+    color: #222D4E;
+}
+
+.button-search-pokedex {
+    width: 100px;
+    height: 53px;
+    background-color: #2781C1;
+    color: white;
+    font-size: 15px;
+    font-weight: bolder;
+    border-style: none;
+    cursor: pointer;
+    padding-top: 5px;
+
+}
+
+.button-search-pokedex:hover {
+    filter: brightness(1.6);
+    transition: all 100ms ease-in-out;
+
+}
+/*======Current page*/
+.pokedex-pag{
+    position: absolute;
+    right: 80px;
+    position: fixed;
+    color: #594545;
+    font-size: 30px;
+}
+
+/*==========POKEDEX SELECT OPTIONS*/
+.pokedex-selected {
+    width: 600px;
+    height: 60px;
+    border-radius: 3px;
+}
+
+.pokedex-selected select {
+    cursor: pointer;
+    position: relative;
+    left:97px;
+}
+
+select {
+    width: 480px;
+    height: 54px;
+    font-size: 23px;
+    font-family: 'Times New Roman', Times, serif;
+    color: #222D4E;
+    border: none;
+    pointer-events: all;
+}
+
+option {
+    font-size: 23px;
+    font-family: 'Times New Roman', Times, serif;
+    color: #222D4E;
+
+}
+
+/*==========POKEDEX CARDS DISPLAY*/
+.pokedex-pokemons-container {
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 30px;
+    justify-content: space-around;
+    gap: 30px;
+}
+
+/*==========POKEDEX PAGINATION*/
+.pagination-container {
+    width: 500px;
+    height: 70px;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 30px;
+}
+
+.nav-pages {
+    width: 400px;
+    height: 50px;
+    display: flex;
+    gap: 30px;
+    justify-content: center;
+    
+}
+.pages {
+    display: flex;
+    justify-content: center;
+}
+.pages li {
+    color: #594545;
+    font-size: 30px;
+    font-weight: bold;
+    width: 50px;
+    height: 40px;
+    border: 1px solid #594545;
+    align-self: center;
+    text-align: center;
+    padding: 8px 0 0 0 ;
+   
+}
+.pages li:hover {
+    background-color:#562B08;
+    color: white;
+    filter: brightness(1.2);
+    cursor: pointer;
+}
+.button-prev-page{
+    width: 50px;
+    height: 48px;
+    border: 3px solid #594545;
+    color: #562B08;
+    font-size: 25px;
+    position: relative;
+    left: 40px;
+
+}
+.button-prev-page:hover{
+    background-color:#562B08;
+    color: white;
+    filter: brightness(1.2);  
+    cursor: pointer;
+}
+.button-next-page{
+    width: 50px;
+    height: 48px;
+    border: 3px solid #594545; 
+    color: #562B08;
+    font-size: 25px;
+  
+}
+.button-next-page:hover{
+    background-color:#562B08;
+    color: white;
+    filter: brightness(1.2); 
+    cursor: pointer; 
+}
+.button-none{
+    display: none;
+}
+.total-pages{
+color: #562B08;
+font-size: 28px;
+font-weight: bold;
+position: absolute;
+right: 228px;
+}
