@@ -1,147 +1,323 @@
 /*=========CONTAINER POKEDEX INFO==========*/
 .general-container {
+    position: fixed;
+    top: 0;
+    left: 0;
     width: 100%;
-    min-height: 100vh;
+    height: 100%;
+    background-color: #000000;
+    overflow-y: auto;
     display: flex;
+    flex-direction: column;
     justify-content: center;
-    background-color: #F5EFE6;
-    background-size: cover;
     align-items: center;
-    font-family: 'Times New Roman', Times, serif;
+    color: white;
 }
 
 /*========= CONFIG CONTAINER==========*/
 .config-container {
-    width: 1400px;
+    width: 65%;
     height: 700px;
-    border: 1px solid rgb(94, 48, 5);
-    background-color: rgba(149, 122, 100, 0.333);
-    backdrop-filter: blur(10px);
+    background-color: #7c29e8;
     border-radius: 17px;
     display: flex;
     justify-content: space-between;
+    align-items: center;
     gap: 10px;
+    opacity: 90%;
 }
 
 .config-image-pokedex {
-    width: 500px;
-    height: 700px;
-   
+    width: 50%;
+    height: 100%;
+
+
+
 }
-.image-config{
-    width: 600px;
-    height: 600px;
-    position: relative;
-    left: 40px;
-    top:50px;
+
+.image-config {
+    width: 90%;
+    height: 550px;
 }
+
+
 .configuration {
-    width: 800px;
-    height: 700px;
+    width: 50%;
+    height: 100%;
     display: flex;
     flex-direction: column;
+    align-items: center;
+
 }
 
 /*=========  GRETTING CONTAINER==========*/
 .gretting-container {
-    width: 800px;
-    height: 150px;
-    margin-top: 60px;
-   
+    width: 100%;
+    height: auto;
+    margin-top: 50px;
+
+
+
 }
 
 .gretting-container h1 {
+    width: 90%;
     font-size: 40px;
     text-align: center;
+
 }
 
 .gretting-container span {
     font-size: 40px;
-    color: #815B5B;
+    color: #f90909;
 }
 
-.gretting-container  p {
-    font-size: 25px;
+.gretting-container p {
+    width: 90%;
+    font-size: 26px;
     text-align: center;
     font-weight: bolder;
+
+
 }
 
 /*=========  INPUT CHECK BOX CONTAINER==========*/
 .config-form-container {
-    width: 800px;
-    height: 100px;
+    width: 100%;
+    height: 600px;
     display: flex;
-    justify-content: center;
-    align-items: center;
-    gap: 60px;
-    color: #815B5B;
+    flex-direction: column;
+    gap: 30px;
+    color: #ffffff;
     font-size: 25px;
     font-weight: bolder;
-   
+    margin-top: 20px;
 
 }
-label:hover{
-    color: #594545;
+
+.labels-container {
+    width: 90%;
+    height: 50px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+
 }
 
-.config-form-container input {
-    width: 35px;
-    height: 35px;
-    cursor: pointer;
-    position: relative;
-    top: 6px;
+.label-form {
+    width: 80px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+
+
+
+
 }
+
+.label-form input {
+    width: 30px;
+    height: 30px;
+
+}
+
+label:hover {
+    color: #ff0909;
+}
+
+
+
 
 /*=========  BUTTONS CONTAINER==========*/
 .container-buttons {
-    width: 800px;
+    width: 90%;
     height: 200px;
-    position: relative;
-    
+    display: flex;
+    flex-direction: column;
+
+
 }
-.container-buttons p{
-    color: #000000;
+
+.container-buttons p {
+    width: 100%;
+    color: #ffffff;
     font-size: 33px;
     text-align: center;
 }
-.config-button-save{
-    width: 170px;
+
+.buttons {
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+
+
+}
+
+.config-button-save {
+    width: 35%;
     height: 47px;
-    background-color: #594545;
-    color: white;
-    font-size: 20px;
+    background-color: #ffffff;
+    color: #7c29e8;
+    font-size: 22px;
     font-weight: bolder;
     border-radius: 7px;
     border-style: none;
     cursor: pointer;
     padding-top: 5px;
-    position: absolute;
-    right: 400px;
-    top:483px;
+
     font-family: 'Times New Roman', Times, serif;
+
+}
+
+.config-button-cancel {
+    width: 35%;
+    height: 47px;
+    background-color: #ffffff;
+    color: #7c29e8;
+    font-size: 22px;
+    font-weight: bolder;
+    border-radius: 7px;
+    border-style: none;
+    cursor: pointer;
+    padding-top: 5px;
+
+    bottom: -20px;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+.config-button-save:hover {
+    filter: brightness(1.4);
+
+}
+
+.config-button-cancel:hover {
+    filter: brightness(1.4);
+
+}
+
+
+/*============RESPONSIVE==========*/
+@media(max-width:600px) {
     
+    .image-config {
+        width: 150px;
+        height: 330px;
+    }
+
+    .gretting-container h1 {
+        font-size: 30px;
+    }
+
+    .gretting-container span,
+    .gretting-container p {
+        font-size: 25px;
+    }
+
+    .label-form {
+        width: 80px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: center;
+    }
+
+    .label-form input {
+        width: 25px;
+        height: 25px;
+    }
+
+    .container-buttons p {
+        width: auto;
+        font-size: 25px;
+    }
+
+    .config-button-save,
+    .config-button-cancel {
+        width: 40%;
+        height: 47px;
+        font-size: 16px;
+    }
 }
-.config-button-cancel{
-    width: 170px;
-    height: 47px;
-    background-color: #594545;
-    color: white;
-    font-size: 20px;
-    font-weight: bolder;
-    border-radius: 7px;
-    border-style: none;
-    cursor: pointer;
-    padding-top: 5px;
-    position: absolute;
-    left: 430px;
-    bottom:-20px;
-    font-family: 'Times New Roman', Times, serif;
+
+@media(min-width:602px) and (max-width:768px) {
+    .image-config {
+        width: 200px;
+        height: 380px;
+    }
+
+    .gretting-container h1,
+    .gretting-container span {
+        font-size: 32px;
+    }
+
+    .gretting-container p {
+        font-size: 25px;
+    }
+
+    .label-form {
+        width: 80px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: center;
+    }
+
+    .label-form input {
+        width: 25px;
+        height: 25px;
+    }
+
+    .container-buttons p {
+        font-size: 30px;
+    }
+
+    .config-button-save,
+    .config-button-cancel {
+        width: 45%;
+        height: 47px;
+        font-size: 18px;
+    }
+
+
 }
-.config-button-save:hover{
-    filter: brightness(1.4);
-   
-}
-.config-button-cancel:hover{
-    filter: brightness(1.4);
- 
+
+@media(min-width:769px) and (max-width:992px) {
+    .image-config {
+        width: 240px;
+        height: 400px;
+    }
+
+    .gretting-container h1,
+    .gretting-container span {
+        font-size: 32px;
+    }
+
+    .gretting-container p {
+
+        font-size: 25px;
+    }
+
+    .label-form {
+        width: 80px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: center;
+    }
+
+    .label-form input {
+        width: 25px;
+        height: 25px;
+    }
+
+    .container-buttons p {
+        font-size: 30px;
+    }
+
+    .config-button-save,
+    .config-button-cancel {
+        width: 45%;
+        height: 47px;
+        font-size: 18px;
+    }
 }

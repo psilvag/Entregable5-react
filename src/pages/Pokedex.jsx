@@ -13,9 +13,10 @@ import SelectByType from '../components/pokedex/SelectByType'
 //=========IMPORT  CSS FILES AND IMAGES=========
 import '../styles/pokedex/pokedex.css'
 import '../styles/pokedex/pokemonCard.css'
-import imagePokemonHeader from '../images/pokedex/pokemon-banner.jpg'
-import homeicon from '../images/pokedex/home.png'
-import configicon from '../images/pokedex/cogwheel.png'
+
+import { AiOutlineHome } from 'react-icons/ai'
+import { BsGear } from 'react-icons/bs'
+
 
 
 
@@ -81,44 +82,35 @@ const Pokedex = () => {
 
   return (
     <div className='pokedex-general-container'>
-
-      <div className='pokedex-image-header'>
-        <img className='image-header' src={imagePokemonHeader} alt="" />
-      </div>
+      <h1>POKEDEX</h1>
       <div className='pokedex-main-container'>
+
         <div className='pokedex-header'>
-          <h1>Welcome <span style={{ color: 'red' }}>{userName}, </span>search your favorite pokemon</h1>
-          
+
+          <h2>Welcome <span style={{ color: 'white' }}>{userName}, </span>search your favorite pokemon</h2>
           <div className='pokedex-button-navigate'>
             <div className='button-container'>
-              <input className='home-button' onClick={handleClick} type="image" src={homeicon} />
+              <AiOutlineHome
+                className='home-button'
+                onClick={handleClick} />
               <p>Go home</p>
             </div>
             <div className='button-container'>
-              <input className='config-button' onClick={handleClickConfig} type="image" src={configicon} />
-              <p>Cards per page</p>
+              <BsGear
+                className='config-button'
+                onClick={handleClickConfig} />
+              <p>Cards/Page</p>
             </div>
           </div>
 
         </div>
 
         <div className='pokedex-input-selected'>
-          <div className='pokedex-input'>
-            <InputSearch />
-          </div>
-          <div className='pokedex-pag'>
-              Pag. {pokemons?.length/cardsPerPage>0? currentpage: '0'}
-          </div>
-          <div className='pokedex-selected'>
-            <SelectByType
-              setTypeSelected={setTypeSelected}
-              setCurrentPage={setCurrentPage} />
-          </div>
+          <InputSearch />
+          <div className='pokedex-pag'> Pag Nº  {pokemons?.length / cardsPerPage > 0 ? currentpage : '0'}</div>
+          <SelectByType setTypeSelected={setTypeSelected} setCurrentPage={setCurrentPage} />
         </div>
-
-
         <div className='pokedex-pokemons-container'>
-
           {
             currentPokemons?.map(pokemon => (
               <CardPoke
@@ -127,17 +119,14 @@ const Pokedex = () => {
               />
             ))
           }
-
         </div>
       </div>
 
-      <div className='pagination-container'>
         <Pagination
           cardsPerPage={cardsPerPage}
           totalCards={pokemons?.length}
-          paginate={paginate}
-        />
-      </div>
+          paginate={paginate}/>
+      
     </div>
   )
 }

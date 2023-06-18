@@ -22,7 +22,7 @@ const SelectByType = ({ setTypeSelected, setCurrentPage }) => {
   }
 
   return (
-    <select onChange={handleChange} >
+    <select className='pokedex-selected' onChange={handleChange} >
       <option value="all pokemons">All pokemons</option>
 
       {
@@ -30,7 +30,8 @@ const SelectByType = ({ setTypeSelected, setCurrentPage }) => {
           <option
             key={type.url}
             value={type.url}>
-            {type.name}</option>
+            {type.name}
+          </option>
         ))
       }
     </select>

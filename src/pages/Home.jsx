@@ -16,14 +16,11 @@ const Home = () => {
           <img className='image-login' src={imagepokemon} alt="image" />
         </div>
         <div className='home-form'>
-
           <h1>Hello poke friend!</h1>
           <h2>Give me your name to start </h2>
           <FormHome />
-
         </div>
       </div>
-
     </div>
   )
 }

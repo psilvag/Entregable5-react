@@ -1,102 +1,349 @@
-
 .home-container {
-    max-width: 100%;
-    height: 100vh;
-    background-image: url('../../images/home/back-image.jpg');
-    background-size: cover;
-    background-repeat: no-repeat;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: black;
     display: flex;
     justify-content: center;
     align-items: center;
 }
+
 .home-pokemon {
-    width: 1200px;
-    height: 700px;
-    display: flex;
-    border-radius: 20px;
-    background-color: rgba(165, 164, 164, 0.333);
-    backdrop-filter: blur(20px);
-    
-}
-.home-image {
+    width: 60%;
+    height: 500px;
     display: flex;
     align-items: center;
+    border-radius: 20px;
+    background-color: #7c29e8;
+    backdrop-filter: blur(90px);
+    opacity: 86%;
+    user-select: none;
+}
+
+.home-image {
+    width: 50%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+
 
 }
+
 .image-login {
     width: 680px;
-    position: relative;
-    top: -50px
+    height: 600px;
+
 }
+
 .home-form {
-    width: 500px;
-    height: 700px;
+    width: 50%;
+    height: 100%;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
     position: relative;
 
+
+
 }
+
 .home-form h1 {
+    width: 90%;
     font-family: 'Times New Roman', Times, serif;
     font-size: 55px;
-    color: #222D4E;
+    color: #ffffff;
     font-weight: bolder;
-    position: absolute;
-    top: 150px;
+    text-align: center;
 
 
 }
+
 .home-form h2 {
+    width: 90%;
     font-family: 'Times New Roman', Times, serif;
-    font-size: 25px;
-    color: #222D4E;
+    font-size: 28px;
+    color: rgb(235, 231, 231);
     font-weight: bolder;
-    position: absolute;
-    top: 250px;
-    left: 40px;
-}
+    text-align: center;
 
+
+}
 
 /*======================COMPONENT FORMHOME======================*/
 .form-container {
-    width: 420px;
+    width: 95%;
     height: 70px;
     display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 2px;
     margin-top: 20px;
-    position: relative;
+
 
 }
+
 .form-pokedex-input {
-    width: 340px;
+    width: 70%;
     height: 35px;
     padding: 2px 8px;
-    border-style: none;
     border-radius: 10px;
-    position: absolute;
-    top: 14px;
-    font-size: 18px;
+    font-size: 24px;
     font-family: 'Times New Roman', Times, serif;
-}
-.form-pokedex-input:hover {
-    background-color: #eaeef3;
-    color: black;
+    outline: none;
 
 }
+
+
+
 .form-pokedex-input::placeholder {
-    font-size: 14px;
-    color: #717175;
+    font-size: 22px;
+    text-align: center;
+    color: #585555;
 }
+
 .form-home-button {
-    width: 60px;
-    height: 60px;
+    width: 50px;
+    height: 55px;
     cursor: pointer;
-    position: absolute;
-    right: 55px;
+
 }
+
 .form-home-button:hover {
     transform: scale(1.3);
     filter: brightness(1.5);
     transition: all 100ms ease-in-out;
+}
+
+
+/*=====================RESPONSIVE=======================*/
+@media (max-width:600px) {
+
+
+    .home-pokemon {
+        width: 80%;
+        height: auto;
+        display: flex;
+        flex-direction: column;
+
+
+    }
+
+    .home-image {
+        width: 90%;
+        height: 100%;
+
+
+    }
+
+    .image-login {
+        width: 290px;
+        height: 230px;
+
+    }
+
+    .home-form {
+        width: 90%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+
+
+    }
+
+    .home-form h1 {
+
+        font-size: 35px;
+
+
+
+    }
+
+    .home-form h2 {
+
+        font-size: 24px;
+
+
+
+    }
+
+    .form-home-button {
+        width: 40px;
+        height: 45px;
+
+    }
+
+
+
+
+}
+
+@media (min-width:601px) and (max-width:768px) {
+    .home-pokemon {
+        width: 80%;
+        height: auto;
+        display: flex;
+        flex-direction: column;
+
+
+    }
+
+    .home-image {
+        width: 90%;
+        height: 100%;
+
+
+    }
+
+    .image-login {
+        width: 400px;
+        height: 270px;
+
+    }
+
+    .home-form {
+        width: 90%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+
+
+    }
+
+    .home-form h1 {
+
+        font-size: 35px;
+
+
+
+    }
+
+    .home-form h2 {
+
+        font-size: 24px;
+
+
+
+    }
+
+    .form-container {
+        width: 80%;
+        height: 70px;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+
+
+
+    }
+
+    .form-home-button {
+        width: 40px;
+        height: 45px;
+
+    }
+
+
+
+}
+
+@media (min-width:769px) and (max-width:992px) {
+    .home-pokemon {
+        width: 80%;
+        height: auto;
+        display: flex;
+        flex-direction: column;
+
+
+    }
+
+    .home-image {
+        width: 90%;
+        height: 100%;
+
+
+    }
+
+    .image-login {
+        width: 400px;
+        height: 270px;
+
+    }
+
+    .home-form {
+        width: 90%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+
+
+    }
+
+    .home-form h1 {
+
+        font-size: 35px;
+
+
+
+    }
+
+    .home-form h2 {
+
+        font-size: 24px;
+
+
+
+    }
+
+    .form-container {
+        width: 80%;
+        height: 70px;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+
+
+
+    }
+
+    .form-home-button {
+        width: 40px;
+        height: 45px;
+
+    }
+
+
+
+}
+
+@media (min-width:993px) and (max-width:1200px) {
+    .home-pokemon {
+        width: 80%;
+        height: auto;
+        display: flex;
+
+
+
+    }
+
+    .image-login {
+        width: 380px;
+        height: 470px;
+
+    }
+}
+
+@media (min-width:1200px) {
+    .image-login {
+        width: 380px;
+        height: 470px;
+
+    }
 }

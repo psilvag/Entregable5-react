@@ -29,7 +29,7 @@ const PokedexConfig = () => {
     navigate('/pokedex')
 
   }
-  const handleClick = () => {
+  const handleClickCancel = () => {
     navigate('/pokedex')
   }
 
@@ -44,15 +44,14 @@ const PokedexConfig = () => {
         </div>
 
         <div className='configuration'>
-          <header>
-            <div className='gretting-container'>
-              <h1>Hello <span>{userName}</span> </h1>
-              <p>Choose how many pokemons cards you want to see per page</p>
-            </div>
 
-          </header>
+          <header className='gretting-container'>
+            <h1>Hello, <span>{userName}</span> </h1>
+            <p>Choose how many pokemons cards you want to see per page</p>
+         </header>
 
           <form className='config-form-container' onSubmit={submit}>
+            <div className='labels-container'>
 
             <label className='label-form'>4
               <input
@@ -89,18 +88,29 @@ const PokedexConfig = () => {
 
             <label className='label-form'>20
               <input
+                className='input'
                 type="radio"
                 value='20'
                 checked={selectedNumberCards.checked === '20'}
                 onChange={handleChange} />
             </label>
-            <button className='config-button-save'>Save</button>
+            </div>
+
+            <div className='container-buttons'>
+
+                  <p>Number of cards per Page: <span style={{ color: 'red', fontWeight: 'bold' }}>{selectedNumberCards.checked}</span></p>
+                  <div className='buttons'>
+                  <button className='config-button-save'>Save</button>
+                  <button className='config-button-cancel' onClick={handleClickCancel}>Cancel</button>
+                  </div>
+                  
+
+            </div>
+
+            
           </form>
 
-          <div className='container-buttons'>
-            <p>Number of cards per Page: <span style={{ color: 'black', fontWeight: 'bold' }}>{selectedNumberCards.checked}</span> </p>
-            <button className='config-button-cancel' onClick={handleClick}>Cancel</button>
-          </div>
+  
 
 
         </div>

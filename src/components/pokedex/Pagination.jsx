@@ -21,24 +21,35 @@ const Pagination = ({ cardsPerPage, totalCards, paginate }) => {
  
   
   return (
+    <>
+    <div className='total-pages'>
+    Total pages: {numberPages.length}
+    </div>
     <nav className='nav-pages'>
-
-      <button className={blockPages + 10 > 16 && numberPages[numberPages.length - 1] <= numberPages.length ? `button-prev-page` : `button-none`} onClick={Previoushandleclick}>{`<<`}  </button>
+      
+      <button className={blockPages + 10 > 10 && numberPages[numberPages.length - 1] <= numberPages.length ? `button-prev-page` : `button-none`} onClick={Previoushandleclick}>{`<`}  
+      </button>
       
       <ul className='pages'>
         {
           numberPages.slice(blockPages, blockPages + 10).map(page =>
-            (<li key={page} onClick={() => paginate(page)}>{page}</li>))
+            
+            (
+              <li key={page} onClick={() => paginate(page)}>{page}</li>
+            
+            ))
         }
       </ul>
-      <button className={blockPages + 10 < numberPages[numberPages.length - 1] ? `button-next-page` : `button-none`} onClick={NextBlockhandleclick}>
-        {`>>`}</button>
 
-      <div className='total-pages'>
-        Total pages: {numberPages.length}
-      </div>
+      <button className={blockPages + 10 < numberPages[numberPages.length - 1] ? `button-next-page` : `button-none`} onClick={NextBlockhandleclick}>
+        {`>`}
+      </button>
+
+      
 
     </nav>
+    
+  </>
 
   )
 }

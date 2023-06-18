@@ -8,7 +8,6 @@ import PokedexByid from './pages/PokedexById'
 import PokedexConfig from './pages/PokedexConfig'
 
 
-
 function App() {
   
 
@@ -24,7 +23,7 @@ function App() {
           </Route>
       
 
-     </Routes>
+       </Routes>
      
 
     </div>

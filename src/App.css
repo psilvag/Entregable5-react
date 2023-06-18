@@ -1,7 +1,9 @@
-html{
+html {
     box-sizing: border-box;
+    user-select: none;
 }
-body{
+
+body {
     margin: 0;
     padding: 0;
     box-sizing: inherit;
